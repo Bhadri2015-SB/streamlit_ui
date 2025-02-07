@@ -24,7 +24,7 @@ else:
     st.write(f"**Subject:** {st.session_state.subject}")
 
 # Display Conversation History
-st.write("### Conversation:")
+st.write("### Convo:")
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
